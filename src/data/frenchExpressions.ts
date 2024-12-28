@@ -14,7 +14,7 @@ export const frenchExpressions = [
   { id: "f13", text: "Poser un lapin", translation: "Ne pas venir à un rendez-vous", description: "Faire attendre quelqu'un en vain", type: "french" },
   { id: "f14", text: "Avoir la flemme", translation: "Être paresseux", description: "Ne pas avoir envie de faire quelque chose", type: "french" },
   { id: "f15", text: "Casser les pieds", translation: "Agacer quelqu'un", description: "Énerver ou déranger fortement", type: "french" },
-  { id: "f16", text: "Tomber dans les pommes", translation: "S'évanouir", description: "Perdre connaissance soudainement", type: "french" },
+  { id: "f16", text: "Être grand comme trois pommes", translation: "Être très petit", description: "Indiquer qu'une personne est de petite taille", type: "french" },
   { id: "f17", text: "Être sur les rotules", translation: "Être épuisé", description: "Se sentir très fatigué", type: "french" },
   { id: "f18", text: "Raconter des salades", translation: "Mentir", description: "Dire des choses fausses ou exagérées", type: "french" },
   { id: "f19", text: "Avoir le feu au plancher", translation: "Être pressé", description: "Se déplacer très rapidement", type: "french" },
@@ -87,4 +87,12 @@ export const frenchExpressions = [
   { id: "f86", text: "Avoir les yeux plus grands que le ventre", translation: "Être trop gourmand", description: "Vouloir plus que ce qu'on peut manger", type: "french" },
   { id: "f87", text: "Avoir un cœur d'artichaut", translation: "Tomber facilement amoureux", description: "Être un peu naïf ou trop sentimental", type: "french" },
   { id: "f88", text: "Casser les oreilles", translation: "Énerver", description: "Être trop bruyant ou déranger les autres", type: "french" },
+  { id: "f89", text: "Être maquillée comme une voiture volée", translation: "Être excessivement maquillée", description: "Avoir un maquillage trop chargé", type: "french" },
+  { id: "f90", text: "On ne répond aux cons que par le silence", translation: "Ignorer les personnes stupides", description: "Ne pas engager de conversation avec des personnes qui ne méritent pas de réponse", type: "french" },
+  { id: "f91", text: "On n'apprend pas au vieux singe à faire la grimace", translation: "Les personnes expérimentées n'ont pas besoin d'apprendre", description: "Les personnes expérimentées savent déjà ce qu'il faut faire", type: "french" },
+  { id: "f92", text: "À la Saint-Glinglin", translation: "Jamais", description: "Faire référence à un événement très improbable ou qui n'arrivera jamais", type: "french" },
+  { id: "f93", text: "Chier une pendule", translation: "Ne pas nous embêter pour des futilités", description: "Ne pas insister avec des plaintes répétitives ou se lamenter pour des choses sans importance", type: "french" },
+  { id: "f94", text: "Ne pas avoir la lumière à tous les étages", translation: "Être un peu bête", description: "Décrire quelqu'un comme un peu stupide ou manquant de perspicacité", type: "french" },
+  { id: "f95", text: "T’es pas le pingouin qui glisse le plus loin", translation: "Tu n'es pas le meilleur", description: "Exprimer que quelqu'un n'est pas particulièrement performant dans quelque chose", type: "french" },
+  { id: "f96", text: "C'est à se taper le cul par terre", translation: "C'est tellement drôle", description: "Exprimer une surprise ou un rire incontrôlable face à une situation", type: "french" }
 ];
