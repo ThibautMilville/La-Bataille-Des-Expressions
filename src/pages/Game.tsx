@@ -79,19 +79,19 @@ export default function Game() {
     <>
       <Header />
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100">
-        <div className="max-w-6xl mx-auto px-4 pt-32 pb-8">
-          <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-4">
+        <div className="max-w-6xl mx-auto px-4 pt-20 sm:pt-24 md:pt-32 pb-6 sm:pb-8">
+          <div className="text-center mb-6 sm:mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-3 sm:mb-4">
               La Bataille des Expressions
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg sm:text-xl text-gray-600">
               Choisissez votre expression favorite parmi les quatre affichées !
             </p>
           </div>
 
           <GameProgress currentRound={round} totalRounds={TOTAL_ROUNDS} />
           
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
             {currentExpressions.map((expression) => (
               <ExpressionCard
                 key={expression.id}
@@ -105,8 +105,8 @@ export default function Game() {
             ))}
           </div>
 
-          <div className="mt-8 text-center">
-            <p className="text-xl font-medium bg-white/50 inline-block px-6 py-2 rounded-full backdrop-blur-sm border border-white/20 shadow-sm">
+          <div className="mt-6 sm:mt-8 text-center">
+            <p className="text-lg sm:text-xl font-medium bg-white/50 inline-block px-4 sm:px-6 py-2 rounded-full backdrop-blur-sm border border-white/20 shadow-sm">
               Round {round + 1} sur {TOTAL_ROUNDS}
             </p>
           </div>

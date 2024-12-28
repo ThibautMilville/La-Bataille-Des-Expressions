@@ -64,7 +64,7 @@ export default function Results() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-pink-50 flex items-center justify-center p-4">
       <motion.div
-        className="max-w-2xl w-full mx-auto text-center"
+        className="max-w-2xl w-full mx-auto text-center py-8 sm:py-12"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -78,14 +78,14 @@ export default function Results() {
         <ExpressionList expressions={choices} />
 
         <motion.div
-          className="flex justify-center space-x-4 mt-8"
+          className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
           <motion.button
             onClick={() => navigate('/')}
-            className="inline-flex items-center px-6 py-3 bg-purple-600 text-white rounded-full
+            className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-purple-600 text-white rounded-full
               font-semibold transition-all duration-300 hover:bg-purple-700"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -104,7 +104,7 @@ export default function Results() {
                 });
               }
             }}
-            className="inline-flex items-center px-6 py-3 bg-gray-600 text-white rounded-full
+            className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-gray-600 text-white rounded-full
               font-semibold transition-all duration-300 hover:bg-gray-700"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
