@@ -2,36 +2,36 @@ export const profiles = [
   {
     id: "le-roi-fromage",
     title: "Le Roi du Fromage",
-    description: "Vous êtes aussi français qu'une baguette fraîche ! Votre goût pour les expressions montre que vous êtes un véritable connaisseur de la culture française.",
+    description: "Sacrebleu ! Vous êtes plus français qu'une baguette sous le bras d'un parisien en grève ! Votre vocabulaire est si raffiné que même les pigeons des Tuileries vous font la révérence. Molière serait fier, Victor Hugo applaudirait, et Édith Piaf vous chanterait 'Je ne regrette rien' !",
     threshold: 80,
     image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "bucheron",
     title: "Le Bûcheron des Grands Bois",
-    description: "Le grand air vous appelle ! Votre esprit canadien est aussi pur que la sève d'érable au printemps.",
+    description: "Tabarnak ! Vous êtes plus québécois qu'une cabane à sucre en plein festival ! Votre accent est si authentique que les orignaux vous prennent pour l'un des leurs. Même les castors arrêtent de construire leurs barrages pour vous écouter parler !",
     threshold: 20,
     image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "franco-cameleon",
     title: "Le Franco-Caméléon",
-    description: "Vous naviguez entre les deux mondes avec aisance, passant des expressions françaises aux canadiennes comme un vrai caméléon culturel !",
+    description: "Incroyable ! Vous jongler entre Paris et Montréal comme un acrobate du Cirque du Soleil ! Un jour vous dites 'Putain' comme un vrai Français, le lendemain vous lâchez un 'Tabarnak' à faire trembler le Saint-Laurent. Vous êtes le trait d'union parfait entre la Tour Eiffel et le Stade Olympique !",
     threshold: 50,
-    image: "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?auto=format&fit=crop&q=80&w=400"
+    image: "https://images.unsplash.com/photo-1514722576538-e8501559835e?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "sirop-erable",
     title: "L'Amoureux du Sirop d'Érable",
-    description: "Votre cœur bat au rythme des cabanes à sucre et des festivals d'hiver. Vous êtes canadien jusqu'au bout des doigts !",
+    description: "Câline de bine ! Vous êtes plus sucré qu'une tarte au sucre dans une cabane à sucre ! Votre cœur bat au rythme des festivals d'hiver et votre sang est fait de sirop d'érable pur. Même les ours vous trouvent trop canadien !",
     threshold: 30,
-    image: "https://images.unsplash.com/photo-1589759548056-65e614a2b0c1?auto=format&fit=crop&q=80&w=400"
+    image: "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&q=80&w=400"
   },
   {
     id: "poete-parisien",
     title: "Le Poète Parisien",
-    description: "Votre façon de parler rendrait Victor Hugo fier ! Vous avez l'âme d'un véritable parisien.",
+    description: "Oh là là ! Vous êtes si parisien que même votre chat miaule avec un accent du 16ème ! Vous ne traversez pas la rue, vous flânez philosophiquement, et votre béret est si authentique qu'il fait la une du Figaro. Baudelaire aurait adoré prendre un café avec vous !",
     threshold: 70,
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&q=80&w=400"
+    image: "https://images.unsplash.com/photo-1431274172761-fca41d930114?auto=format&fit=crop&q=80&w=400"
   }
 ];

@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Styles personnalisés pour la barre de défilement */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: theme(colors.purple.400) theme(colors.purple.100);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: theme(colors.purple.100);
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: theme(colors.purple.400);
+  border-radius: 8px;
+  border: 2px solid theme(colors.purple.100);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: theme(colors.purple.500);
+}

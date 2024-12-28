@@ -3,7 +3,7 @@ export const canadianExpressions = [
   { id: "c2", text: "Câlisse", translation: "Merde", description: "Un juron très utilisé pour exprimer l'exaspération", type: "canadian" },
   { id: "c3", text: "Ostie", translation: "Merde", description: "Un juron québécois pour exprimer la colère ou la surprise", type: "canadian" },
   { id: "c4", text: "Crisse", translation: "Merde", description: "Exprimant la frustration ou l'irritation, très courant au Québec", type: "canadian" },
-  { id: "c5", text: "Maudite", translation: "Maudite", description: "Utilisé pour renforcer une émotion négative, surtout la colère", type: "canadian" },
+  { id: "c5", text: "Maudite", translation: "Putain", description: "Utilisé pour renforcer une émotion négative, surtout la colère", type: "canadian" },
   { id: "c6", text: "Faque", translation: "Alors", description: "Une contraction populaire de 'alors' ou 'donc'", type: "canadian" },
   { id: "c7", text: "Coudonc", translation: "Mais", description: "Une expression pour exprimer la surprise ou l'exaspération", type: "canadian" },
   { id: "c8", text: "Tire-toi une bûche", translation: "Assieds-toi", description: "Inviter quelqu'un à s'asseoir de manière informelle", type: "canadian" },

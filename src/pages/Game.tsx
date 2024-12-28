@@ -19,7 +19,7 @@ interface Expression {
 export default function Game() {
   const navigate = useNavigate();
   const [round, setRound] = useState(0);
-  const [choices, setChoices] = useState<string[]>([]);
+  const [choices, setChoices] = useState<Expression[]>([]);
   const [currentExpressions, setCurrentExpressions] = useState<Expression[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [usedExpressions] = useState<Set<string>>(new Set());
@@ -68,7 +68,7 @@ export default function Game() {
   const handleChoice = (expression: Expression) => {
     setSelectedId(expression.id);
     setTimeout(() => {
-      setChoices(prev => [...prev, expression.type]);
+      setChoices(prev => [...prev, expression]);
       setRound(prev => prev + 1);
       setSelectedId(null);
       setCurrentExpressions(pickNewExpressions());
@@ -79,7 +79,7 @@ export default function Game() {
     <>
       <Header />
       <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100">
-        <div className="max-w-6xl mx-auto px-4 pt-20 pb-8">
+        <div className="max-w-6xl mx-auto px-4 pt-32 pb-8">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-4">
               La Bataille des Expressions
