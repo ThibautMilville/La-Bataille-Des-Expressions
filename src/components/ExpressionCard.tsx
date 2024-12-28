@@ -1,13 +1,11 @@
-import React from 'react';
-import { Sparkles, MapPin } from 'lucide-react';
-
 interface ExpressionCardProps {
   text: string;
   translation: string;
   description: string;
   onClick: () => void;
-  type: 'french' | 'canadian';
   isSelected?: boolean;
+  selectedId?: string | null;
+  id: string;
 }
 
 export default function ExpressionCard({ 
@@ -15,40 +13,48 @@ export default function ExpressionCard({
   translation, 
   description, 
   onClick, 
-  type,
-  isSelected 
+  selectedId,
+  id
 }: ExpressionCardProps) {
-  const baseColors = type === 'french' 
-    ? 'from-blue-50 to-indigo-50 border-blue-200 hover:border-blue-400' 
-    : 'from-red-50 to-rose-50 border-red-200 hover:border-red-400';
+  const isCardSelected = selectedId === id;
+  const shouldBeDisabled = selectedId !== null && !isCardSelected;
 
   return (
     <button
       onClick={onClick}
-      className={`w-full max-w-sm p-6 bg-gradient-to-br ${baseColors} 
-        border-2 rounded-xl shadow-lg transition-all duration-300 
-        transform hover:scale-102 hover:shadow-xl
-        ${isSelected ? 'scale-95 opacity-50' : ''}
-        active:scale-95 md:hover:scale-105`}
+      disabled={shouldBeDisabled}
+      className={`
+        w-full p-6 rounded-2xl transition-all duration-300 
+        bg-gradient-to-br from-white to-gray-50
+        border-2 shadow-lg backdrop-blur-sm
+        group relative overflow-hidden
+        ${shouldBeDisabled 
+          ? 'opacity-50 scale-95 border-gray-200' 
+          : isCardSelected
+            ? 'border-emerald-400 from-emerald-50 to-emerald-100 shadow-emerald-100'
+            : 'border-transparent hover:border-purple-400 hover:from-purple-50 hover:to-purple-100 hover:shadow-purple-100'
+        }
+        transform hover:scale-102 hover:-translate-y-1
+        active:scale-95 md:hover:scale-105
+      `}
     >
-      <div className="flex items-center justify-between mb-4">
-        <Sparkles className={`w-6 h-6 ${type === 'french' ? 'text-blue-500' : 'text-red-500'}`} />
-        <div className="flex items-center">
-          <MapPin className={`w-4 h-4 mr-1 ${type === 'french' ? 'text-blue-400' : 'text-red-400'}`} />
-          <span className="text-sm font-medium">
-            {type === 'french' ? 'France' : 'Québec'}
-          </span>
-        </div>
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-white/30 opacity-0 group-hover:opacity-100 transition-opacity" />
+
+      <div className="relative space-y-4">
+        <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">
+          {text}
+        </h3>
+        <p className="text-lg italic text-purple-700 font-medium">
+          {translation}
+        </p>
+        <p className="text-gray-600 text-sm leading-relaxed">
+          {description}
+        </p>
       </div>
 
-      <div className="space-y-3">
-        <h3 className="text-xl font-bold">{text}</h3>
-        <p className="text-gray-600 italic">{translation}</p>
-        <p className="text-gray-700 text-sm">{description}</p>
-      </div>
-
-      <div className="mt-4 pt-4 border-t border-gray-200">
-        <span className="text-sm font-medium text-gray-500">
+      <div className="relative mt-6 pt-4 border-t border-gray-200">
+        <span className="text-sm font-medium text-gray-500 group-hover:text-purple-600 transition-colors">
           Cliquez pour choisir cette expression
         </span>
       </div>
