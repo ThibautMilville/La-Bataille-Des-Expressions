@@ -2,7 +2,7 @@ export const profiles = [
   {
     id: "le-roi-fromage",
     title: "Le Roi du Fromage",
-    description: "Sacrebleu ! Vous êtes plus français qu'une baguette sous le bras d'un parisien en grève ! Votre vocabulaire est si raffiné que même les pigeons des Tuileries vous font la révérence. Molière serait fier, Victor Hugo applaudirait, et Édith Piaf vous chanterait 'Je ne regrette rien' !",
+    description: "Sacrebleu ! Vous êtes plus français qu'une baguette sous le bras d'un parisien en grève ! Votre vocabulaire est si raffiné que même les pigeons des Tuileries vous font la révérence. Molière serait fier, Victor Hugo applaudirait, et Édith Piaf vous chanterait \"Je ne regrette rien\" !",
     threshold: 80,
     image: "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&q=80&w=400"
   },

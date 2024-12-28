@@ -82,4 +82,9 @@ export const frenchExpressions = [
   { id: "f81", text: "Se prendre un râteau", translation: "Être rejeté", description: "Lorsque quelqu'un vous ignore ou vous rejette", type: "french" },
   { id: "f82", text: "Marcher sur des œufs", translation: "Agir avec prudence", description: "Faire attention dans une situation délicate", type: "french" },
   { id: "f83", text: "Le cœur sur la main", translation: "Être généreux", description: "Être quelqu'un de bienveillant", type: "french" },
+  { id: "f84", text: "Passer une nuit blanche", translation: "Ne pas dormir", description: "Rester éveillé toute la nuit", type: "french" },
+  { id: "f85", text: "Se faire tirer les oreilles", translation: "Se faire réprimander", description: "Recevoir une réprimande ou une correction", type: "french" },
+  { id: "f86", text: "Avoir les yeux plus grands que le ventre", translation: "Être trop gourmand", description: "Vouloir plus que ce qu'on peut manger", type: "french" },
+  { id: "f87", text: "Avoir un cœur d'artichaut", translation: "Tomber facilement amoureux", description: "Être un peu naïf ou trop sentimental", type: "french" },
+  { id: "f88", text: "Casser les oreilles", translation: "Énerver", description: "Être trop bruyant ou déranger les autres", type: "french" },
 ];
