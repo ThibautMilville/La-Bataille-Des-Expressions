@@ -6,8 +6,8 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 flex items-center justify-center">
-      <div className="max-w-2xl text-center space-y-6 px-4 py-8">
+    <div className="h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-purple-100 flex items-center justify-center">
+      <div className="max-w-2xl text-center space-y-6 px-4 sm:px-6 md:px-8 py-4 sm:py-8">
         <div className="flex justify-center scale-125 mb-8">
           <SleepyCatLogo />
         </div>
@@ -22,7 +22,7 @@ export default function Home() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600">
             Découvrez votre personnalité linguistique à travers les expressions françaises et québécoises !
           </p>
-          
+
           <p className="text-base sm:text-lg text-gray-500">
             Un jeu captivant qui teste votre affinité avec les expressions des deux côtés de l'Atlantique.
           </p>
