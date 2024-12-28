@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 interface GradientButtonProps {
@@ -8,16 +9,34 @@ interface GradientButtonProps {
 
 export function GradientButton({ onClick, children }: GradientButtonProps) {
   return (
-    <button
+    <motion.button
       onClick={onClick}
-      className="group relative px-8 py-4 rounded-full overflow-hidden transition-all duration-300
-        hover:shadow-lg hover:shadow-purple-500/20 active:scale-95"
+      className="group relative px-8 py-4 rounded-full overflow-hidden"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
     >
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transition-transform group-hover:scale-105" />
-      <div className="relative flex items-center text-white font-semibold text-lg">
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600"
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.3 }}
+      />
+      <motion.div
+        className="relative flex items-center text-white font-semibold text-lg"
+        whileHover={{ x: 5 }}
+        transition={{ duration: 0.2 }}
+      >
         {children}
-        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-      </div>
-    </button>
+        <motion.div
+          className="ml-2"
+          whileHover={{ x: 5 }}
+          transition={{ duration: 0.2 }}
+        >
+          <ArrowRight className="w-5 h-5" />
+        </motion.div>
+      </motion.div>
+    </motion.button>
   );
 }

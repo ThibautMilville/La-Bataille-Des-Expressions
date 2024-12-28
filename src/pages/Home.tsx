@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className="pt-4">
             <GradientButton onClick={() => navigate('/game')}>
-              Commencer l'Aventure
+              Jouer maintenant
             </GradientButton>
           </div>
         </div>
