@@ -7,16 +7,16 @@ interface ExpressionListProps {
 
 export function ExpressionList({ expressions }: ExpressionListProps) {
   return (
-    <div className="max-h-64 overflow-y-auto rounded-xl bg-white/50 p-4 custom-scrollbar">
+    <div className="max-h-[60vh] overflow-y-auto rounded-xl bg-white/50 p-3 sm:p-4 custom-scrollbar mx-4 sm:mx-0">
       {expressions.map((expression, index) => (
         <div 
           key={`${expression.id}-${index}`}
-          className="flex items-center gap-4 p-4 bg-white rounded-lg mb-3 shadow-sm hover:shadow-md transition-shadow"
+          className="flex items-start sm:items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white rounded-lg mb-3 shadow-sm hover:shadow-md transition-shadow"
         >
           <CountryFlag country={expression.type === 'french' ? 'france' : 'canada'} />
           <div className="text-left flex-1">
-            <div className="font-semibold text-gray-800">{expression.text}</div>
-            <div className="text-sm text-gray-600">{expression.translation}</div>
+            <div className="font-semibold text-gray-800 text-base sm:text-lg mb-1">{expression.text}</div>
+            <div className="text-sm sm:text-base text-gray-600">{expression.translation}</div>
           </div>
         </div>
       ))}
